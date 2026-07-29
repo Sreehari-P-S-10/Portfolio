@@ -1,10 +1,11 @@
 {
-  "description": "Showcase your work with a premium portfolio website featuring modern design, intuitive navigation, and engaging animations to attract potential clients.",
+  "title": "Sreehari P S - Portfolio",
+  "description": "Portfolio of Sreehari P S, a B.Tech Computer Science student engineering intelligent full-stack systems, AI-integrated apps, and IoT solutions.",
   "robots": {
-    "index": false
+    "index": true
   },
   "accessibility": {
-    "addBypassLinks": false,
+    "addBypassLinks": true,
     "ignoreReducedMotion": false
   }
 }
