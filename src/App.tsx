@@ -6,7 +6,6 @@ const ROLES = [
   'Full Stack Developer',
   'Mobile App Developer',
   'AI Integration Engineer',
-  'IoT Systems Builder',
 ]
 
 const NAV_LINKS = [
@@ -323,19 +322,6 @@ function Hero() {
         className="absolute top-1/4 right-0 w-[500px] h-[500px] rounded-full pointer-events-none"
         style={{ background: 'radial-gradient(circle, rgba(212,255,58,0.04) 0%, transparent 70%)' }}
       />
-
-      {/* availability badge */}
-      <Reveal>
-        <div className="mb-12">
-          <span className="inline-flex items-center gap-2.5 px-3.5 py-1.5 border border-fg/10 rounded-full">
-            <span
-              className="w-1.5 h-1.5 rounded-full bg-accent"
-              style={{ animation: 'pulse-dot 2s ease-in-out infinite' }}
-            />
-            <span className="font-mono text-[11px] text-fg/45">Available for internships · 2026</span>
-          </span>
-        </div>
-      </Reveal>
 
       {/* headline */}
       <Reveal delay={80}>
