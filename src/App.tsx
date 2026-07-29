@@ -202,18 +202,20 @@ function Cursor() {
 /* ─── SCROLL PROGRESS ───────────────────────────────────────────────────── */
 
 function ScrollBar() {
-  const [pct, setPct] = useState(0)
+  const barRef = useRef<HTMLDivElement>(null)
   useEffect(() => {
     const fn = () => {
+      if (!barRef.current) return
       const total = document.body.scrollHeight - window.innerHeight
-      setPct(total > 0 ? (window.scrollY / total) * 100 : 0)
+      const pct = total > 0 ? (window.scrollY / total) * 100 : 0
+      barRef.current.style.width = `${pct}%`
     }
     window.addEventListener('scroll', fn, { passive: true })
     return () => window.removeEventListener('scroll', fn)
   }, [])
   return (
     <div className="fixed top-0 left-0 right-0 z-[60] h-px bg-border">
-      <div className="h-full bg-accent" style={{ width: `${pct}%`, transition: 'none' }} />
+      <div ref={barRef} className="h-full bg-accent" style={{ width: '0%', transition: 'none' }} />
     </div>
   )
 }
