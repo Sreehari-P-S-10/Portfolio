@@ -744,8 +744,8 @@ function Contact() {
               <a
                 key={label}
                 href={href}
-                target="_blank"
-                rel="noopener noreferrer"
+                target={href.startsWith('http') ? '_blank' : undefined}
+                rel={href.startsWith('http') ? 'noopener noreferrer' : undefined}
                 className="flex items-center justify-between py-5 border-b border-border group hover:border-accent/20 transition-all duration-300"
               >
                 <span className="font-mono text-[11px] text-fg/30 uppercase tracking-widest">
