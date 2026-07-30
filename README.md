@@ -1,6 +1,7 @@
 # Sreehari P S — Developer Portfolio
 
-![Portfolio Preview](https://via.placeholder.com/1200x600/060606/d4ff3a?text=Sreehari+P+S+-+Portfolio)
+![Portfolio Preview](./public/preview.png)
+
 
 > A highly optimized, single-page developer portfolio designed to showcase projects, technical experience, and engineering capabilities.
 
