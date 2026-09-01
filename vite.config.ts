@@ -11,7 +11,7 @@ export default defineConfig(({ mode }) => {
   const emitSourcemaps = mode === 'development'
 
   return {
-    base: process.env.PUBLIC_URL ? `${process.env.PUBLIC_URL}/` : '/',
+    base: process.env.PUBLIC_URL ? `${process.env.PUBLIC_URL}/` : '/Portfolio/',
     build: {
       sourcemap: emitSourcemaps ? 'inline' : false,
       minify: !emitSourcemaps,
